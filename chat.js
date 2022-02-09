@@ -15,21 +15,21 @@
 
 
 
-// const input = require("readline-sync");
+const input = require("readline-sync");
 
-// console.log("Vamos verificar a sua possibilidade de limite");
+console.log("Vamos verificar a sua possibilidade de limite");
 
-// const renda = input.question("Qual a sua Renda?");
+const renda = input.question("Qual a sua Renda?");
 
-// if (renda >= 1200 && renda <= 2500) {
-//     console.log("O limite do seu cartão será R$:500")
-// } else if (renda > 2500 && renda <= 4500) {
-//     console.log("O limite do seu cartão será R$:1000")
-// } else if (renda > 4500) {
-//     console.log("O limite do seu cartão será R$:1500")
-// } else {
-//     console.log("Não poderemos te oferecer limites de crédito")
-// };
+if (renda >= 1200 && renda <= 2500) {
+    console.log("O limite do seu cartão será R$:500")
+} else if (renda > 2500 && renda <= 4500) {
+    console.log("O limite do seu cartão será R$:1000")
+} else if (renda > 4500) {
+    console.log("O limite do seu cartão será R$:1500")
+} else {
+    console.log("Não poderemos te oferecer limites de crédito")
+};
 
 const input = require("readline-sync");
 

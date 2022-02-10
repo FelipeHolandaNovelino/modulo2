@@ -14,8 +14,9 @@
 // };
 
 
+//esse seria uma operadora de cartão de credito ao analisar a renda e o limite que teria o cartão
 
-const input = require("readline-sync");
+/*const input = require("readline-sync");
 
 console.log("Vamos verificar a sua possibilidade de limite");
 
@@ -29,18 +30,27 @@ if (renda >= 1200 && renda <= 2500) {
     console.log("O limite do seu cartão será R$:1500")
 } else {
     console.log("Não poderemos te oferecer limites de crédito")
-};
+};*/
+
+
+
+
+//esse é um jogo para acertar um número secreto que eu estava fazendo no final da aula mas nao consegui fazer todo
 
 const input = require("readline-sync");
 
- console.log("Acerte o número Secreto");
+console.log("Acerte o número Secreto");
 let chance = 2;
-let chute = input.question("Digite seu Chute!!!");
-const numeroAleatorio = Math.random() * 10;
-const numeroSecreto = Math.round(numeroAleatorio);
+let chute = input.question("Digite seu Chute de 0 a 10!!!");
+
+function sorteia() {
+
+    return Math.round(Math.random() * 10);
+
+ }
 
 while(chance <= 3 ) {
-if (chute == numeroAleatorio) {
+if (chute == sorteia()) {
     console.log("Que Sorte Você Acertou")
     break;
 } else {
@@ -48,4 +58,9 @@ if (chute == numeroAleatorio) {
     let chute = input.question("Digite seu Chute!!!")
     chance++
 };
+
 }
+if (chance > 3) {
+ console.log("Acabaram suas chances")
+ 
+} 

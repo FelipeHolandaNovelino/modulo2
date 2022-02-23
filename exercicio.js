@@ -1,4 +1,4 @@
-const input = require("readline-sync");  //media dos alunos
+  const input = require("readline-sync");
 console.log("Vamos verificar a sua média do semestre?");
 
 const notas = input.question("informe quantas notas teve nesse semestre :");
@@ -11,14 +11,13 @@ let totalNotaSemestre = 0;
 
 while(contador <= totaldisciplinas) {
     let nota = parseFloat(input.question("Digite a nota = "));
-    totalNotaSemestre = totalNotaSemestre + (nota);
+    totalNotaSemestre = parseFloat(totalNotaSemestre) + nota;
     contador++;
 }
 
 let media = totalNotaSemestre / totaldisciplinas;
 
 console.log(`Sua média é : ${media}`)
-
 
 
 if (media > 6) {
@@ -28,7 +27,7 @@ if (media > 6) {
 }
 
 
-// contador de letrasem uma string
+// contador de letras em uma string
 
 let frase = "A TURMA DO BACKEND DO SENAC, É MASSA!"
 console.log(frase.length)
